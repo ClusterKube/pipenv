@@ -1,0 +1,37 @@
+Start new pages in Django
+// Create a new page app using the command 
+python manage.py startapp name_app  
+
+// Registry name of new app name in folder settings.py of main page on section " INSTALLED_APPS = "
+
+views module ( where we define a fuction of HTTP or handler )
+// create one Fuction on views.py 
+Code sample 
+
+from django.http import HttpResponse
+
+def say_hello(request):
+    return HttpResponse("Hello Roytman Best in World")
+   
+
+// Create a new urls.py in new_app folder
+// This will need import urls from django using path
+// and from Current Module using "from . import views" where we will use 
+Code Sample
+
+from django.urls import path
+from . import views
+
+#URLSConf
+urlpatterns = [
+    path('pages/hello', views.say_hello)
+
+
+//  URL Configurantion after create fuction include new urls apps on urls.py of main Application.
+
+Code sample 
+path('pages/', include ('pages.urls'))
+
+
+
+
