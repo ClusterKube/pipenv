@@ -1,0 +1,18 @@
+
+// Create a new fuction using HTML mockup 
+// add new file in app_django using index.html,
+// Add code of http request in views.py and use "render" fuction
+Sample Code
+def say_hello(request):
+    return render(request, 'hello.html')
+    
+ // Also could use string Value like this :
+ 
+ def say_hello(request):
+    return render(request, 'hello.html'{'name': 'Roytman'})
+    
+ // Create a App Store
+ 
+ python manage.py startapp store
+ python manage.py startapp tags
+ 
