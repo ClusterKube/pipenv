@@ -1,0 +1,7 @@
+1 Create a pipenv
+   
+ pip install pipenv
+pipenv --python 3.8 && pipenv shell
+python -m pip install --upgrade pip
+pipenv install -e editable_package/
+pipenv lock

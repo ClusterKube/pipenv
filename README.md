@@ -1,2 +1,0 @@
-# pipenv
-Commands of Pipenv
